@@ -22,6 +22,11 @@ while True:
     user = input("                                  YOU: ")
     #taking input from the user
     
+    if "how are you" in user:
+        print("I am doing good! What About You?")
+    
+    #you can add more replies.
+    
 
     if "play" in user:
         song=user.replace("play","")
@@ -35,18 +40,18 @@ while True:
             os.startfile('chrome.exe')
         if "edge" in user:
             os.startfile('msedge.exe')
-            time.sleep(0.2)
-            keyboard.press(Key.ctrl)
-            keyboard.press("w")
-            keyboard.release(Key.ctrl)
-            keyboard.release("w")
+#             time.sleep(0.2)
+#             keyboard.press(Key.ctrl)
+#             keyboard.press("w")
+#             keyboard.release(Key.ctrl)
+#             keyboard.release("w") used this cuz my pc opens 2 windows!
         if "python" in user:
             os.startfile('python.exe')
-            time.sleep(0.01)
-            keyboard.press(Key.ctrl)
-            keyboard.press("w")
-            keyboard.release(Key.ctrl)
-            keyboard.release("w")
+#             time.sleep(0.01)
+#             keyboard.press(Key.ctrl)
+#             keyboard.press("w")
+#             keyboard.release(Key.ctrl)
+#             keyboard.release("w") same here
         if "exe" in user:
             try:
                 program = user.replace("open ","")
